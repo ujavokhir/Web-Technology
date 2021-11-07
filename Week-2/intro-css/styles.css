@@ -1,0 +1,280 @@
+/* root styles */
+:root {
+  --font-color: #505050;
+  --logo-font-family: 'Sansita Swashed', cursive;
+  --regular-font-family: 'Roboto', sans-serif; 
+  --main-bg-color: #faf3e6;
+  --section-bottom-border: 1px solid #c0c0c0;
+}
+
+/* general styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+
+
+/* header styles */
+.header {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: var(--section-bottom-border);
+}
+
+.header-content {
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.logo-text {
+  display: inline-block;
+  font-family: var(--logo-font-family);
+}
+
+.logo-text > a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 2em;
+}
+
+.nav {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+} 
+
+.nav-item > a {
+  text-decoration: none;
+  padding: 5px 20px;
+  color: var(--font-color);
+  font-family: var(--regular-font-family);
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+.nav-item > a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* main topics section */
+.topics {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: var(--section-bottom-border);
+}
+
+.topics-content {
+  width: 1300px;
+  margin: 30px auto 30px auto;
+}
+
+.topics-list {
+  list-style: none;
+  text-align: center;
+}
+
+.topics-item {
+  display: inline-block;
+  max-width: 28%;
+}
+
+.topic {
+  width: 100%;
+  position: relative;
+}
+
+.topic-recently-added,
+.topic-hot {
+  position: absolute;
+  border: 2px solid #fff;
+  z-index: 1;
+  font-variant: small-caps;
+  font-family: var(--regular-font-family);
+  border-radius: 20px;
+  top: 5px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.topic-recently-added {
+  right: 0;
+  padding: 8px 20px;
+  background: #537cef;
+  transform: rotate(-25deg) translateX(-30px);
+}
+
+.topic-hot {
+  top: 5px;
+  left: 80px;
+  padding: 12px 10px;
+  background: #ff2323;
+}
+
+.topic-img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  transition: all 0.2s ease-in;
+}
+
+.topic-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 8px -5px rgba(50, 50, 50, 0.54);
+}
+
+.topic-text {
+  font-family: var(--regular-font-family);
+  color: var(--font-color);
+  width: 75%;
+  margin: 0 auto;
+  font-size: 0.9em;
+  padding: 20px;
+}
+
+
+/* text blocks styles */
+.posts {
+  width: 100%;
+  border-bottom: var(--section-bottom-border);
+}
+
+.posts-content {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.post {
+  position: relative;
+  padding: 20px 20px;
+}
+
+.post-special {
+  border: 1px solid #c0c0c0;
+}
+
+.featured {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 20px;
+  font-family: var(--regular-font-family);
+  font-variant: small-caps;
+  font-size: 0.8em;
+}
+
+.post-title {
+  padding: 10px 0; 
+  font-family: var(--logo-font-family);
+  font-size: 2em;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+.post-title > a {
+  text-decoration: none;
+  color: var(--font-color)
+} 
+
+.post-brief {
+  font-family: var(--regular-font-family);
+  line-height: 1.5em;
+}
+
+
+
+/* message box styles */
+.message-box {
+  width: 100%;
+  border: var(--section-bottom-border);
+}
+
+.msg-box-content {
+  width: 1000px;
+  margin: 10px auto 30px auto;
+}
+
+.msg-box-title {
+  font-family: var(--logo-font-family);
+  color: var(--font-color);
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.form {
+  width: 50%;
+  font-family: var(--regular-font-family);
+  display: inline-block;
+}
+
+.input-group {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  font-variant: small-caps;
+  margin: 10px 0;
+}
+
+.input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  outline-color: #cc8b37;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-family: inherit;
+  font-variant: small-caps;
+  font-size: 1em;
+  background: #537cef;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-content {
+  width: 1000px;
+  margin: 30px auto 30px auto;
+  font-family: var(--regular-font-family);
+}
+
+
+

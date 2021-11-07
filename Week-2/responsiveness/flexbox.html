@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+</head>
+
+<style>
+  /* try to turn on and turn off the styles to see the difference */
+
+  .flexbox-header,
+  .flexbox-text,
+  .flexbox-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexbox-header {
+    align-items: baseline;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    background: #eee;
+  }
+
+  .flexbox-images > img {
+    max-width: 48%;
+    margin: 5px 10px;
+  }
+
+  .flexbox-text > p {
+    padding: 20px;
+    box-sizing: border-box;
+    background: #eee;
+    margin: 5px 10px;
+  }
+
+</style>
+
+<body>
+
+  <header class="flexbox-header">
+    <h1>Logo</h1>
+
+    <nav>
+      <a href="">API</a>
+      <a href="">Documentation</a>
+    </nav>
+  </header>
+
+  <section class="flexbox-images">
+    <img src="https://images.unsplash.com/photo-1477951233099-d2c5fbd878ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1557652696-0fd8a35b0d62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+  </section>
+
+  <section class="flexbox-text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorem enim ad quas impedit excepturi? Aliquid cupiditate quaerat ullam ab, assumenda earum distinctio recusandae libero fugit tempore, natus deleniti quidem!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim beatae possimus itaque repellendus commodi deserunt reprehenderit ea ratione ullam, facilis, quo quam nisi suscipit laboriosam perspiciatis dolores aperiam ipsam sint.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, omnis nobis? Impedit praesentium nobis doloribus ipsa numquam molestiae assumenda ex? Corporis fugiat itaque aut qui dolorem aliquid suscipit sit atque?</p>
+  </section>
+</body>
+</html>

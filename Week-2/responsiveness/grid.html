@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+
+<!-- reference: fireship.io examples are used as base -->
+
+<style>
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    font-variant: small-caps;
+    color: #444;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #777;
+    color: #fff;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .box-tall {
+    grid-row: 1 / 3;
+    background: #eee;
+    padding: 10px 20px;
+  }
+  
+  /*
+  .box-wide {
+    grid-column: span 2 / auto;
+  } */
+</style>
+
+<body>
+  <section class="boxes">
+    <div class="box box-tall">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="">nature</a></li>
+        <li><a href="">animals</a></li>
+        <li><a href="">tech</a></li>
+        <li><a href="">digital</a></li>
+        <li><a href="">people</a></li>
+      </ul>
+    </div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1529524987368-af489318987c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1524855567984-d7bbc2893539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1518675013095-1cef34ac232e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1583502977892-b0cecdb574fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box box-wide"><img src="https://images.unsplash.com/photo-1575399217636-f3dc9d20af4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1592660716763-09efba6db4e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1586038693164-cb7ee3fb8e2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1527259047647-731b8be6fd42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1546072921-51e1a830f091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1527259047647-731b8be6fd42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+    <div class="box"><img src="https://images.unsplash.com/photo-1546072921-51e1a830f091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""></div>
+  </section>
+</body>
+</html>

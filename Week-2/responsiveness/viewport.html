@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .text {
+    padding: 10px;
+    background: lightblue;
+    font-size: 1.5rem;
+  }
+
+  .boxes {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    padding: 20px 40px;
+    margin: 10px 0;
+    background: #eee;
+  }
+  
+  h2 {
+    display: inline-block;
+    background: #9fccff;
+    padding: 20px;
+  }
+</style> 
+
+<body>
+  <div class="text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat sunt optio, corrupti, aperiam quo eveniet non deleniti cum adipisci, quod numquam incidunt vitae cumque! Atque doloremque quae incidunt quis ab?
+  </div>
+
+  <div class="boxes">
+    <div class="box">Hello!</div>
+    <div class="box">Bye!</div>
+    <div class="box">Greetings!</div>
+    <div class="box">Cheers!</div>
+  </div>
+
+  <h2 id="ratio"></h2>
+
+  <script>
+    let ratio = document.getElementById('ratio')
+    window.addEventListener('resize', () => {
+      ratio.textContent = `Device pixel ration: ${window.devicePixelRatio}`
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intro to CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <h1 class="logo-text">
+            <a href="#">Intro to CSS</a>
+          </h1>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#">blog</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#posts">posts</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#reachus">reach us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>    
+
+    <section class="topics">
+      <div class="topics-content">
+        <ul class="topics-list">
+          <li class="topics-item">
+            <article class="topic">
+              <span class="topic-recently-added">recent</span>
+              <img class="topic-img" src="https://images.unsplash.com/photo-1567226055219-bd1ee70f3d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Elit.</p>
+            </article>
+          </li>
+
+          <li class="topics-item">
+            <article class="topic">
+              <img class="topic-img" src="https://images.unsplash.com/photo-1567312588623-8cc94e2c31bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit.</p>
+            </article>
+          </li>
+
+          <li class="topics-item">
+            <article class="topic">
+              <img class="topic-img" src="https://images.unsplash.com/photo-1583084578896-19b9c8f68fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+          </li>
+
+          <li class="topics-item">
+            <article class="topic">
+              <img class="topic-img" src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Elit.</p>
+            </article>
+          </li>
+
+          <li class="topics-item">
+            <article class="topic">
+              <span class="topic-hot">hot</span>
+              <img class="topic-img" src="https://images.unsplash.com/photo-1601159645475-aa27e2d17015?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit.</p>
+            </article>
+          </li>
+
+          <li class="topics-item">
+            <article class="topic">
+              <img class="topic-img" src="https://images.unsplash.com/photo-1580556369905-c0ac1ec6a72e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+              <p class="topic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="posts">
+      <div class="posts-content">
+        <h2 class="msg-box-title" id="posts">Latest posts</h2>
+        <article class="post">
+          <h2 class="post-title"><a href="#"> Lorem ipsum dolor sit amet.</a></h2>
+          <p class="post-brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem.</p>
+        </article>
+
+        <article class="post post-special">
+          <span class="featured">featured</span>
+          <h2 class="post-title"><a href="#">Lorem ipsum dolor sit amet consectetur.</a></h2>
+          <p class="post-brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem.</p>
+        </article>
+
+        <article class="post">
+          <h2 class="post-title"><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </a></h2>
+          <p class="post-brief">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla fuga eos nihil hic maiores ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil distinctio illo nemo vitae, obcaecati quasi expedita minima saepe voluptatem.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="message-box">
+      <div class="msg-box-content">
+        <h2 class="msg-box-title" id="reachus">Reach Us</h2>
+        <form class="form">
+          <label>
+            name
+            <input class="input" type="text" />
+          </label>
+
+          <label>
+            email
+            <input class="input" type="email" />
+          </label>
+
+          <label>
+            message box
+            <textarea class="input" cols="30" rows="10"></textarea>
+          </label>
+          <button class="btn">send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Introduction to CSS @WEBTECH 2020-21</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
